@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>My Groovy Books</title>
+    <style type='text/css'>
+            html,
+            body {
+              padding: 0;
+              margin: 0;
+            }
+            table {
+                display: grid;
+                min-width: 100%;
+                grid-template-columns:
+                    minmax(150px, 1fr)
+                    minmax(150px, 1.67fr)
+                    minmax(150px, 1.67fr)
+                    minmax(150px, 1.67fr)                    
+            }
+            thead,
+            tbody,
+            tr {
+              display: contents;
+            }
+            
+            th,
+            td {
+              padding: 15px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            
+            th {
+              position: sticky;
+              top: 0;
+              background: #6c7ae0;
+              text-align: left;
+              font-weight: normal;
+              font-size: 1.1rem;
+              color: white;
+            }
+            
+            th:last-child {
+              border: 0;
+            }
+            
+            td {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              color: #808080;
+            }
+            
+            tr:nth-child(even) td {
+              background: #f8f6ff;
+            }
+        </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>978-1935182443</td>
+          <td>Groovy in Action 2nd Edition</td>
+          <td>Dierk Koenig</td>
+          <td>50.58</td>
+        </tr>
+        <tr>
+          <td>978-1935182948</td>
+          <td>Making Java Groovy</td>
+          <td>Ken Kousen</td>
+          <td>33.96</td>
+        </tr>
+        <tr>
+          <td>978-1937785307</td>
+          <td>Programming groovy 2: Dynamic Productivity for the Java Developer</td>
+          <td>Venkat Subramaniam</td>
+          <td>28.92</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
